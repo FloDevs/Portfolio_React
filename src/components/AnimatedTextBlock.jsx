@@ -1,9 +1,14 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const MotionDiv = motion.div;
 
-export default function AnimatedTextBlock({ children, direction = "right", className = "" }) {
-  const initial = direction === "left" ? { opacity: 0, x: -40 } : { opacity: 0, x: 40 };
+export default function AnimatedTextBlock({
+  children,
+  direction = "right",
+  className = "",
+}) {
+  const initial =
+    direction === "left" ? { opacity: 0, x: -40 } : { opacity: 0, x: 40 };
 
   return (
     <MotionDiv

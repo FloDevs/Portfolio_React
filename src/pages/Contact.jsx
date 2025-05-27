@@ -27,14 +27,14 @@ export default function Contact() {
     {
       icon: <Linkedin />,
       label: "LinkedIn",
-      content: "linkedin.com/in/monprofil",
-      link: "https://linkedin.com/in/monprofil",
+      content: "linkedin.com/in/florian-bouteiller",
+      link: "https://linkedin.com/in/florian-bouteiller-32a8a2310",
     },
     {
       icon: <Github />,
       label: "GitHub",
-      content: "github.com/monpseudo",
-      link: "https://github.com/monpseudo",
+      content: "github.com/Flodevs",
+      link: "https://github.com/FloDevs",
     },
   ];
 
@@ -85,7 +85,11 @@ function ContactItem({ icon, label, content, link, direction }) {
       transition={{ duration: 0.4 }}
     >
       <div className="text-indigo-600">{icon}</div>
-      <div className={`text-center md:text-left ${!isLeft && "md:text-right"} w-full`}>
+      <div
+        className={`text-center md:text-left ${
+          !isLeft && "md:text-right"
+        } w-full`}
+      >
         <p className="text-sm font-medium">{label}</p>
         {link ? (
           <a
@@ -104,7 +108,3 @@ function ContactItem({ icon, label, content, link, direction }) {
     </MotionDiv>
   );
 }
-
-
-
-

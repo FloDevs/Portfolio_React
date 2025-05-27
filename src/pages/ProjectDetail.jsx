@@ -1,11 +1,11 @@
-import { useParams, Navigate, Link } from 'react-router-dom';
-import { projects } from '../data/projects';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useParams, Navigate, Link } from "react-router-dom";
+import { projects } from "../data/projects";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
-import Lightbox from 'yet-another-react-lightbox';
-import Zoom from 'yet-another-react-lightbox/plugins/zoom';
-import 'yet-another-react-lightbox/styles.css';
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 const MotionSection = motion.section;
 
@@ -44,35 +44,32 @@ export default function ProjectDetail() {
       )}
 
       {project.tech?.length > 0 && (
-      <div className="mt-8 flex flex-wrap gap-3 mb-4">
-        {project.tech.map((tech, i) => (
-          <span
-            key={i}
-            className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    )}
+        <div className="mt-8 flex flex-wrap gap-3 mb-4">
+          {project.tech.map((tech, i) => (
+            <span
+              key={i}
+              className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      )}
 
       {/* Description */}
       <ul className="space-y-4 text-lg  mb-10 leading-relaxed">
         {project.description.map((text, i) => (
           <li key={i} className="flex items-start gap-2">
-        
             <p>{text}</p>
           </li>
         ))}
       </ul>
 
-      
-
       {/* Images secondaires (2 & 3) */}
       {(project.images[1] || project.images[2]) && (
         <div
           className={`grid gap-6 ${
-            project.images[1] && project.images[2] ? 'sm:grid-cols-2' : ''
+            project.images[1] && project.images[2] ? "sm:grid-cols-2" : ""
           }`}
         >
           {project.images[1] && (
@@ -113,7 +110,10 @@ export default function ProjectDetail() {
 
       {/* Bouton retour */}
       <div className="text-center mt-16">
-        <Link to="/projects" className="text-indigo-600 hover:underline text-sm">
+        <Link
+          to="/projects"
+          className="text-indigo-600 hover:underline text-sm"
+        >
           ← Retour aux projets
         </Link>
       </div>
