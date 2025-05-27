@@ -34,7 +34,7 @@ const Home = () => {
           {/* Avatar/Photo */}
           <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8 border-4 border-white dark:border-gray-800 shadow-lg">
             <img
-              src="/my-picture.jpg"
+              src={`${import.meta.env.BASE_URL}/my-picture.jpg`}
               alt="Photo de Florian Bouteiller, jeune homme avec des cheveux châtain avec des yeux bleues et un peu de barbe"
               className="w-full h-full object-cover"
             />
@@ -93,8 +93,8 @@ const Home = () => {
               className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primaryDark transition-colors duration-300"
             >
               <img
-                src="/logos/github-logo.png"
-                alt="Tailwind CSS"
+                src={`${import.meta.env.BASE_URL}logos/github-logo.png`}
+                alt="Logo de GitHub"
                 className="w-10 h-10"
               />
             </a>
@@ -105,8 +105,8 @@ const Home = () => {
               className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primaryDark transition-colors duration-300"
             >
               <img
-                src="/logos/linkedin-logo.png"
-                alt="Tailwind CSS"
+                src={`${import.meta.env.BASE_URL}logos/linkedin-logo.png`}
+                alt="Logo de Linkedin"
                 className="w-10 h-10"
               />
             </a>
@@ -115,8 +115,8 @@ const Home = () => {
               className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primaryDark transition-colors duration-300"
             >
               <img
-                src="/logos/mail-logo.png"
-                alt="Tailwind CSS"
+                src={`${import.meta.env.BASE_URL}logos/mail-logo.png`}
+                alt="Logo d'une enveloppe"
                 className="w-10 h-10"
               />
             </a>

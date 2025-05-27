@@ -107,8 +107,8 @@ const Footer = () => {
                   className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primaryDark"
                 >
                   <img
-                    src="/logos/github-logo.png"
-                    alt="React"
+                    src={`${import.meta.env.BASE_URL}logos/github-logo.png`}
+                    alt="Logo de Github"
                     className="w-5 h-5"
                   />
                 </a>
@@ -119,7 +119,8 @@ const Footer = () => {
                   className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primaryDark"
                 >
                   <img
-                    src="/logos/linkedin-logo.png"
+                    src={`${import.meta.env.BASE_URL}logos/linkedin-logo.png`}
+
                     alt="React"
                     className="w-5 h-5"
                   />
@@ -129,7 +130,8 @@ const Footer = () => {
                   className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primaryDark"
                 >
                   <img
-                    src="/logos/mail-logo.png"
+                    src={`${import.meta.env.BASE_URL}logos/mail-logo.png`}
+
                     alt="React"
                     className="w-5 h-5"
                   />
@@ -151,13 +153,15 @@ const Footer = () => {
             </span>
             <div className="flex space-x-2">
               <img
-                src="/logos/react-logo.png"
+                src={`${import.meta.env.BASE_URL}logos/react-logo.png`}
+
                 alt="React"
                 className="w-5 h-5"
               />
-              <img src="/logos/vite-logo.png" alt="Vite" className="w-5 h-5" />
+              <img src={`${import.meta.env.BASE_URL}logos/vite-logo.png`} alt="Vite" className="w-5 h-5" />
               <img
-                src="/logos/tailwind-logo.png"
+                src={`${import.meta.env.BASE_URL}logos/tailwind-logo.png`}
+
                 alt="Tailwind CSS"
                 className="w-5 h-5"
               />

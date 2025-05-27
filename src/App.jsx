@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio_React">
       <div className="min-h-screen flex flex-col relative bg-white dark:bg-gray-900">
         <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-400/20 dark:bg-blue-600/20 rounded-full filter blur-[100px] animate-blob"></div>

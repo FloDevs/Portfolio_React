@@ -11,11 +11,11 @@ export default function About() {
   const [index, setIndex] = useState(0);
 
   const images = [
-    { src: "about/python.png", title: "Formation Python sur Udemy" },
-    { src: "about/reconversion.jpg", title: "Reconversion professionnelle" },
-    { src: "about/qualiopi.webp", title: "Formation certifiante" },
-    { src: "about/ctf.jpg", title: "Passion cybersécurité" },
-    { src: "logos/next-logo.avif", title: "Logo de next.js" },
+    { src: `${import.meta.env.BASE_URL}about/python.png`, title: "Formation Python sur Udemy" },
+    { src: `${import.meta.env.BASE_URL}about/reconversion.jpg`, title: "Reconversion professionnelle" },
+    { src: `${import.meta.env.BASE_URL}about/qualiopi.webp`, title: "Formation certifiante" },
+    { src: `${import.meta.env.BASE_URL}about/ctf.jpg`, title: "Passion cybersécurité" },
+    { src: `${import.meta.env.BASE_URL}logos/next-logo.avif`, title: "Logo de next.js" }
   ];
 
   return (

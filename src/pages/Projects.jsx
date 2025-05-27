@@ -27,14 +27,14 @@ const Projects = () => {
       description: "Retrouvez tout mes projets ici",
       icon: (
         <img
-          src="/logos/github-logo.png"
+          src={`${import.meta.env.BASE_URL}logos/github-logo.png`}
           alt="Logo de Github"
           style={{ width: "24px", height: "24px" }}
         />
       ),
       color: "rgba(111, 66, 193, 0.9)",
       url: "https://github.com/FloDevs",
-      imageSrc: "/logos/github-logo.png",
+      imageSrc: `${import.meta.env.BASE_URL}logos/github-logo.png`,
       internal: false,
     },
     {
@@ -43,14 +43,14 @@ const Projects = () => {
       description: "Conception d'une plateforme e-learning et e-commerce.",
       icon: (
         <img
-          src="/logos/node-logo.png"
+          src={`${import.meta.env.BASE_URL}logos/node-logo.png`}
           alt="Logo de Node.js "
           style={{ width: "24px", height: "24px" }}
         />
       ),
       color: "rgba(60, 135, 58, 0.9)",
       url: "/projects/nodejs",
-      imageSrc: "/logos/node-logo.png",
+      imageSrc: `${import.meta.env.BASE_URL}logos/node-logo.png`,
       internal: true,
     },
     {
@@ -59,14 +59,14 @@ const Projects = () => {
       description: "Découvrez mon premier portfolio.",
       icon: (
         <img
-          src="/logos/vue-logo.png"
+          src={`${import.meta.env.BASE_URL}logos/vue-logo.png`}
           alt="Logo du framework Vue"
           style={{ width: "24px", height: "24px" }}
         />
       ),
       color: "rgba(65, 184, 131, 0.9)",
       url: "/projects/vue",
-      imageSrc: "/logos/vue-logo.png",
+      imageSrc: `${import.meta.env.BASE_URL}logos/vue-logo.png`,
       internal: true,
     },
     {
@@ -75,14 +75,14 @@ const Projects = () => {
       description: "Gestion d'une médiatheque.",
       icon: (
         <img
-          src="/logos/django-logo.png"
+          src={`${import.meta.env.BASE_URL}logos/django-logo.png`}
           alt="Logo du framework Django"
           style={{ width: "24px", height: "24px" }}
         />
       ),
       color: "rgba(44, 78, 66, 0.9)",
       url: "/projects/django",
-      imageSrc: "/logos/django-logo.png",
+      imageSrc: `${import.meta.env.BASE_URL}logos/django-logo.png`,
       internal: true,
     },
     {
@@ -91,14 +91,14 @@ const Projects = () => {
       description: "Gestion d'un site ecommerce.",
       icon: (
         <img
-          src="/logos/symfony-logo.png"
+          src={`${import.meta.env.BASE_URL}logos/symfony-logo.png`}
           alt="Logo du framework Symfony"
           style={{ width: "24px", height: "24px" }}
         />
       ),
       color: "rgba(35, 35, 35, 1)",
       url: "/projects/symfony",
-      imageSrc: "/logos/symfony-logo.png",
+      imageSrc: `${import.meta.env.BASE_URL}logos/symfony-logo.png`,
       internal: true,
     },
   ];

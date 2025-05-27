@@ -4,10 +4,11 @@ export const projects = [
     title: "Knowledge learning avec Node.js",
     tech: ["Node.js", "EJS", "MongoDB", "Stripe"],
     images: [
-      "/screens/node.png",
-      "/screens/node1.png",
-      "/screens/node2.png",
-    ],
+      `${import.meta.env.BASE_URL}screens/node.png`,
+      `${import.meta.env.BASE_URL}screens/node1.png`,
+      `${import.meta.env.BASE_URL}screens/node2.png`,
+    ]
+,
     description: [
       "Achat de cursus ou de leçons individuelles avec paiement sécurisé via Stripe.",
       "Système de gestion des leçons : accès restreint selon les achats, verrouillage/déverrouillage automatique.",
@@ -23,8 +24,8 @@ export const projects = [
     title: "Premier Portfolio avec Vue.js",
     tech: ["Vue.js", "Vite"],
     images: [
-      "/screens/vue1.png",
-      "/screens/vue.png",
+      `${import.meta.env.BASE_URL}screens/vue1.png`,
+      `${import.meta.env.BASE_URL}screens/vue.png`,
     ],
     description: [
       "Présentation dynamique de projets avec effets d’animation et navigation fluide.",
@@ -37,8 +38,8 @@ export const projects = [
     title: "Médiathèque avec Django",
     tech: ["Django","Python", "SQLite"],
     images: [
-      "/screens/django.png",
-      "/screens/django1.png",
+      `${import.meta.env.BASE_URL}screens/django.png`,
+      `${import.meta.env.BASE_URL}screens/django1.png`,
     ],
     description: [
       "Les bibliothécaires peuvent gérer les membres, les médias et les emprunts depuis un back-office sécurisé.",
@@ -52,8 +53,8 @@ export const projects = [
     title: "E-commerce avec Symfony",
     tech: ["PHP", "Symfony", "MySQL", "Stripe", "Twig"],
     images: [
-      "/screens/symf.png",
-      "/screens/symf1.png",
+      `${import.meta.env.BASE_URL}screens/symf.png`,
+      `${import.meta.env.BASE_URL}screens/symf1.png`,
     ],
     description: [
       "Un système de panier permet d’ajouter et de retirer des articles avant de passer commande.",
