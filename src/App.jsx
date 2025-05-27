@@ -1,14 +1,12 @@
 // src/App.jsx - Remplacement complet
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './pages/Home';
-import Footer from './components/Footer';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
-import About from './pages/About';
-import Contact from './pages/Contact';
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -19,8 +17,7 @@ function App() {
           <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-400/20 dark:bg-purple-600/20 rounded-full filter blur-[100px] animate-blob-slow"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-indigo-400/15 dark:bg-indigo-600/15 rounded-full filter blur-[100px] animate-blob-slower"></div>
         </div>
-        
-        {/* Contenu du site */}
+
         <Header />
         <main className="flex-grow pt-20 relative z-10">
           <Routes>
@@ -29,13 +26,6 @@ function App() {
             <Route path="/projects/:slug" element={<ProjectDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-
-            {/* Commentez ces routes jusqu'à ce que vous ayez créé les composants */}
-            {/*
-            
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            */}
           </Routes>
         </main>
         <Footer />

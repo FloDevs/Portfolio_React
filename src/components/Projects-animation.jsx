@@ -6,8 +6,7 @@
 // -----------------------------------------------------------------------------
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 // -----------------------------------------------------------------------------
 // Utility: conditional classNames (tiny clone of clsx)
@@ -158,7 +157,6 @@ function ProjectCard({
               </a>
             )}
           </div>
-
         </div>
       )}
     </MotionDiv>
@@ -205,8 +203,12 @@ export function ProjectStack3D({
   const handleBackgroundClick = () => setFrontCardIndex(null);
 
   return (
-    <div className={cn("flex justify-center items-center py-32 relative", className)}>
-
+    <div
+      className={cn(
+        "flex justify-center items-center py-32 relative",
+        className
+      )}
+    >
       {frontCardIndex !== null && (
         <div
           className="fixed inset-0 z-0 cursor-pointer"
@@ -228,7 +230,8 @@ export function ProjectStack3D({
           if (!isMobile && frontCardIndex === null) setIsHovered(false);
         }}
         onClick={() => {
-          if (isMobile && !isHovered && frontCardIndex === null) setIsHovered(true);
+          if (isMobile && !isHovered && frontCardIndex === null)
+            setIsHovered(true);
         }}
       >
         {projects.map((project, idx) => (
@@ -240,7 +243,9 @@ export function ProjectStack3D({
             isMobile={isMobile}
             isFront={frontCardIndex === idx}
             frontCardIndex={frontCardIndex}
-            onClick={(i) => setFrontCardIndex((prev) => (prev === i ? null : i))}
+            onClick={(i) =>
+              setFrontCardIndex((prev) => (prev === i ? null : i))
+            }
             width={cardWidth}
             height={cardHeight}
             spacing={spacing}
